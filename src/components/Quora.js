@@ -1,9 +1,9 @@
 import React from 'react'
 import QuoraHeader from './QuoraHeader'
-import { Widgets } from '@material-ui/icons'
+// import { Widgets } from '@material-ui/icons'
 import Sidebar from './Sidebar'
 import Feed from './Feed'
-import Widget from '../Widget'
+import Widget from './Widget'
 import './css/Quora.css'
 
 function Quora() {
