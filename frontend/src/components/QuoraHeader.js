@@ -14,6 +14,10 @@ import './css/QuoraHeader.css';
 import Modal from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
 import axios from "axios";
+import { auth } from '../firebase';
+import { signOut } from 'firebase/auth';
+import { useDispatch, useSelector } from "react-redux";
+import { logout, selectUser } from "../feature/userSlice";
 
 
 function QuoraHeader() {
@@ -22,6 +26,8 @@ function QuoraHeader() {
     const [inputUrl, setInputUrl] = useState("")
     const [question, setQuestion] = useState("")
     const Close = <CloseIcon/>
+    const dispatch = useDispatch()
+    const user = useSelector(selectUser)
 
     const handleSubmit = async () => {
         if(question !== "") {
@@ -33,7 +39,8 @@ function QuoraHeader() {
             }
             const body = {
                 questionName: question,
-                questionUrl: inputUrl
+                questionUrl: inputUrl,
+                user: user
             }
             await axios
                 .post('/api/questions', body, config)
@@ -44,6 +51,17 @@ function QuoraHeader() {
                 }).catch((e) => {
                 console.log(e)
                 alert('Error in adding question')
+            })
+        }
+    }
+
+    const handleLogout = () => {
+        if(window.confirm("Are you sure to logout ?")){
+            signOut(auth).then(() => {
+                dispatch(logout())
+                console.log("Successfully logout")
+            }).catch(() => {
+                console.log("Error in logout")
             })
         }
     }
@@ -76,7 +94,9 @@ function QuoraHeader() {
                 <input type="text" placeholder="Search questions"/>
             </div>
             <div className="qHeader__Rem">
-                <Avatar/>
+                <span onClick = {handleLogout}>
+                    <Avatar src = {user?.photo}/>
+                </span>
             </div>
             <Button onClick={() => setIsModalOpen(true)}>Add Question</Button>
             <Modal 
@@ -97,7 +117,7 @@ function QuoraHeader() {
                     <h5>Share Link</h5>
                 </div>
                 <div className="modal__info">
-                    <Avatar className="avatar" />
+                    <Avatar src = {user?.photo} className="avatar" />
                     <div className="modal__scope">
                         <PeopleAltOutlined />
                         <p>Public</p>
