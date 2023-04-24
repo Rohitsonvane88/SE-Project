@@ -1,7 +1,6 @@
-const { MongoClient, ServerApiVersion } = require('mongodb');
 const mongoose = require('mongoose')
 
-const url = "mongodb+srv://dbUser:dbUserPassword@cluster0.spgmzca.mongodb.net/?retryWrites=true&w=majority"
+const url = "mongodb+srv://dbUser:dbUserPassword@cluster0.spgmzca.mongodb.net/quora-clone-mern?retryWrites=true&w=majority"
 
 module.exports.connect = () => {
     mongoose.connect(url, {

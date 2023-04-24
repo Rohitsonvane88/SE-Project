@@ -28,7 +28,7 @@ function SidebarOptions() {
         <p>Psychology</p>
       </div>
 
-      <div className="sidebarOption">
+      {/* <div className="sidebarOption">
         <img
           src="https://qphs.fs.quoracdn.net/main-thumb-t-877-100-e7jKHEQr0HExAIA9rlsyHlV6HJyRruEo.jpeg"
           alt=""
@@ -82,7 +82,7 @@ function SidebarOptions() {
           alt=""
         />
         <p>Education</p>
-      </div>
+      </div> */}
       <div className="sidebarOption">
         {/* <Add /> */}
         <p className="text">Discover Spaces</p>
