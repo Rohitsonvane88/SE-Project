@@ -6,50 +6,50 @@ function SidebarOptions() {
     <div className="sidebarOptions">
       <div className="sidebarOption">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/f/f5/History_Logo.svg"
+          src="https://img.freepik.com/free-vector/illustration-graduation-hat_53876-5920.jpg?size=626&ext=jpg"
           alt=""
         />
-        <p>History</p>
+        <p>Exams</p>
       </div>
 
       <div className="sidebarOption">
         <img
-          src="https://www.clipartmax.com/png/small/456-4561170_icon-business-icons-in-svg-and-png-financial-icon-png.png"
+          src="https://thumbs.dreamstime.com/z/placement-vector-icon-job-illustration-sign-event-symbol-private-sign-can-be-used-web-mobile-placement-vector-icon-job-182597217.jpg"
           alt=""
         />
 
-        <p>Business</p>
+        <p>Placement</p>
       </div>
       <div className="sidebarOption">
         <img
-          src="https://e7.pngegg.com/pngimages/572/81/png-clipart-multicolored-brain-illustration-educational-psychology-institute-for-the-psychological-sciences-learning-psychologist-cerebro-digital-computer-wallpaper-psychology.png"
+          src="https://code.google.com/images/developers.png"
           alt=""
         />
-        <p>Psychology</p>
-      </div>
-
-      {/* <div className="sidebarOption">
-        <img
-          src="https://qphs.fs.quoracdn.net/main-thumb-t-877-100-e7jKHEQr0HExAIA9rlsyHlV6HJyRruEo.jpeg"
-          alt=""
-        />
-        <p>Cooking</p>
+        <p>Coding</p>
       </div>
 
       <div className="sidebarOption">
         <img
-          src="https://qphs.fs.quoracdn.net/main-thumb-t-801-100-Sf8h894FXbQZQit0TeqDrrqS6xw6dwCQ.jpeg"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Logo_of_Techfest%2CIIT_Bombay.jpg/900px-Logo_of_Techfest%2CIIT_Bombay.jpg?20120712100103"
           alt=""
         />
-        <p>Music</p>
+        <p>TechFest</p>
       </div>
 
       <div className="sidebarOption">
         <img
-          src="https://qphs.fs.quoracdn.net/main-thumb-t-931-100-c8WCPwZ9qPsh5zLGQ5wHh1ddxtc9Cch7.jpeg"
+          src="https://w7.pngwing.com/pngs/203/179/png-transparent-graphic-designer-logo-innovative-ideas-web-design-hand-orange-thumbnail.png"
           alt=""
         />
-        <p>Science</p>
+        <p>Innovation</p>
+      </div>
+
+      <div className="sidebarOption">
+        <img
+          src="https://w7.pngwing.com/pngs/660/742/png-transparent-cultural-icon-culture-visual-arts-the-arts-artsculture-culture-logo-art-thumbnail.png"
+          alt=""
+        />
+        <p>Cultural Events</p>
       </div>
 
       <div className="sidebarOption">
@@ -82,7 +82,7 @@ function SidebarOptions() {
           alt=""
         />
         <p>Education</p>
-      </div> */}
+      </div>
       <div className="sidebarOption">
         {/* <Add /> */}
         <p className="text">Discover Spaces</p>

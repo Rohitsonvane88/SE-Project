@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: url("https://qph.cf2.quoracdn.net/main-qimg-23aaba82a9c5a692e585b729ebaa035e-c");
+  background: url("//qsf.fs.quoracdn.net/-4-ans_frontend_assets.images.home_page_bg_desktop.png-26-4770753d59b970e1.png");
 }
 
 .login__container {
@@ -19,7 +19,8 @@
 
 .login__logo {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  margin-top: 5px;
 }
 
 .login__logo > img {
@@ -210,4 +211,16 @@
 
 .login__footer > p:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 439px) {
+  .login__auth
+  {
+    display: block;
+    margin-top: 10px;
+  }
+  .login__authDesc
+  {
+    margin-bottom: 0px;
+  }
 }

@@ -60,12 +60,13 @@ function Login() {
                 className="login__googleAuth"
                 src="https://media-public.canva.com/MADnBiAubGA/3/screen.svg"
                 alt=""
+                style={{marginLeft: "7px", height: "27px"}}
               />
               <p onClick={signIn}>Continue With Google</p>
             </div>
             <div className="login__authOption">
               <img
-                className="login__googleAuth"
+                className="login__facebookAuth"
                 src="https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo-500x350.png"
                 alt=""
               />
