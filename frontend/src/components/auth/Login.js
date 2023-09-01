@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { auth, provider } from "../../firebase";
-import {signInWithPopup} from "firebase/auth";
+import {signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword} from "firebase/auth";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -15,21 +15,24 @@ function Login() {
   };
 
   const handleSignIn = (e) => {
-    e.preventDefault();
 
-    auth
-      .signInWithEmailAndPassword(email, password)
+    e.preventDefault();
+      
+      signInWithEmailAndPassword(auth, email, password)
       .then((auth) => {
         console.log(auth);
       })
       .catch((e) => alert(e.message));
+
+    setEmail("");
+    setPassword("");
   };
 
   const registerSignIn = (e) => {
-    e.preventDefault();
 
-    auth
-      .createUserWithEmailAndPassword(email, password)
+    e.preventDefault();
+      
+      createUserWithEmailAndPassword(auth, email, password)
       .then((auth) => {
         if (auth) {
           console.log(auth);
@@ -49,7 +52,7 @@ function Login() {
         <div className="login__desc">
           <p>A Place to Share knowledge and better understand the world</p>
           <p style={{ color: "royalblue", fontSize: "25px" }}>
-            HandCrafted with ❤️ by{" "}
+            HandCrafted by{" "}
           </p>
           <h3>Dev & Rohit</h3>
         </div>

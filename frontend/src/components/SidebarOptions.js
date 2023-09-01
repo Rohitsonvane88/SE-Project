@@ -22,7 +22,7 @@ function SidebarOptions() {
       </div>
       <div className="sidebarOption">
         <img
-          src="https://code.google.com/images/developers.png"
+          src="https://cdn.iconscout.com/icon/premium/png-512-thumb/coding-1495751-1265247.png?f=avif&w=256"
           alt=""
         />
         <p>Coding</p>
@@ -54,23 +54,23 @@ function SidebarOptions() {
 
       <div className="sidebarOption">
         <img
-          src="https://qphs.fs.quoracdn.net/main-thumb-t-1140-100-24q3tiv4WhPssc5TGwf0mvCM5aiqGVXW.jpeg"
+          src="https://cdn6.aptoide.com/imgs/0/2/9/0290a9ebb852ac85b54a82c0911edc7a_icon.png"
           alt=""
         />
-        <p>Health</p>
+        <p>GATE</p>
       </div>
 
       <div className="sidebarOption">
         <img
-          src="https://qphs.fs.quoracdn.net/main-thumb-t-843-100-W7FzODceTO2aQmp8D7E4rKZ8YgSv21eR.jpeg"
+          src="https://cdn4.iconfinder.com/data/icons/education-485/64/study-abroad-internationl-education-scholarship-512.png"
           alt=""
         />
-        <p>Movies</p>
+        <p>Abroad Studies</p>
       </div>
 
       <div className="sidebarOption">
         <img
-          src="https://qphs.fs.quoracdn.net/main-thumb-t-2177-100-JiR07D1TQSfeQzRvWXomVaY4Poj2f8Yb.jpeg"
+          src="https://cdn-icons-png.flaticon.com/512/4257/4257487.png"
           alt=""
         />
         <p>Technology</p>
@@ -78,13 +78,16 @@ function SidebarOptions() {
 
       <div className="sidebarOption">
         <img
-          src="https://qphs.fs.quoracdn.net/main-thumb-t-996-100-bfZBQjeEenKKl8fcNY4tVv0FyArtB0Mb.jpeg"
+          src="https://cdn-icons-png.flaticon.com/512/8187/8187943.png"
           alt=""
         />
-        <p>Education</p>
+        <p>Personal Growth</p>
       </div>
       <div className="sidebarOption">
-        {/* <Add /> */}
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/992/992651.png"
+          alt=""
+        />
         <p className="text">Discover Spaces</p>
       </div>
     </div>
