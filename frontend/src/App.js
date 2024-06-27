@@ -15,25 +15,25 @@ function App() {
 
   useEffect(() => {
     onAuthStateChanged(auth, (authUser) => {
-      if(authUser) {
+      if (authUser) {
         dispatch(login({
           userName: authUser.displayName,
           photo: authUser.photoURL,
           email: authUser.email,
           uid: authUser.uid
         }))
-        console.log("AuthUser",authUser)
+        console.log("AuthUser", authUser)
       }
     })
   }, [dispatch])
 
   return (
     <div className="App">
-      
+
       {
-        user ? (<Quora/>) : (<Login/>)
+        !user ? (<Login />) : (<Quora />)
       }
-      
+
     </div>
   );
 }
